@@ -16,7 +16,8 @@ body {
 
 #container {
     margin: auto;
-    height: 800px;
+
+    height: 900px;
     padding: 10px;
 
 }
@@ -27,8 +28,9 @@ body {
     border: 3px solid grey;
     padding: 10px;
     top: 50%;
-    width: 100%;
+    width: 600PX;
     transform: translateY(-50%);
     box-shadow: 4px 4px;
+    height: 435px;
 }
 
