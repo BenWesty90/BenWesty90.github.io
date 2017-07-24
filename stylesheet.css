@@ -54,7 +54,45 @@ body {
     width: 600PX;
     transform: translateY(-50%);
     box-shadow: 4px 4px;
-    height: 435px;
+    height: 480px;
     z-index: 2;
 }
 
+#rncont {
+    width: 100px;
+    text-align: center;
+    border: 1px solid grey;
+    float: left;
+    margin: auto;
+    margin-left: 10px;
+}
+
+#rncont p{
+    font-size: 20px
+}
+
+#moneycont {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid grey;
+    float: left;
+    margin-left: 70px;
+    clear: right;
+    margin-bottom: 10px;
+
+    
+}
+
+#moneycont p{
+    font-size: 20px;
+}
+
+#formscont {
+    margin-top: 10px;
+    clear: both;
+}
+
+#header {
+    text-align: center;
+}
