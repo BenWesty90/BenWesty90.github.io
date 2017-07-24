@@ -165,4 +165,14 @@ $(document).ready(function () {
     //$predictionHeader.html("test");
     //$predictionParagraph.html("test");
     
+    $('#popup').hide();
+    
+    $('#info').on('click', function (){
+        $('#popup').slideToggle();
+    })
+    
+    $('#popup #close').on('click', function (){
+        $('#popup').slideToggle();
+    })
+    
 });
