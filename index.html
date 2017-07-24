@@ -1,35 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>My Projects</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <script src="jquery-3.2.1.js" type="text/javascript"></script>
-    <script src="javascript.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="jquery-3.2.1.js"></script>
+<script src="scripts.js"></script>
 </head>
+    
+    
 <body>
-<div id="container">
-  <p id="centertitle">myProjects</p>
-</div>
+    <div id="container">
+        <h2>Round Number</h2>
+        <p id="roundnumber">none</p>
+        <h2>Total Enemy Money (Including Equipment Value)</h2>
+        <p id="enemyMoney">$800</p>
 
-<div id="nav">
-    <p id="project1"><a href="#pr1">Project 1</a></p>
-    <p id="project2">Project 2</p>
-    <p id="project3">Project 3</p>
-  <p id="project4">Project 4</p>
-</div>
-<div id="main">
-    <p id="maintext">
-        <a name="pr1">Lorem</a> ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed velit in magna pharetra egestas. Ut quis rhoncus eros. Cras efficitur leo ante, sollicitudin hendrerit justo aliquam vitae. Ut semper tempus lacus, sed venenatis eros dignissim eget. Curabitur ultricies turpis in metus molestie tristique. Donec id est ullamcorper nibh volutpat suscipit eget vel leo. Nulla ipsum enim, congue a tempor a, consequat non tortor. Etiam consequat, augue luctus auctor imperdiet, nisi mi semper quam, id maximus elit libero nec metus. Fusce tincidunt erat massa, et volutpat dolor gravida et. Suspendisse justo tellus, mollis ut ipsum at, ornare ornare libero. Proin placerat nunc consectetur elit rutrum, eget euismod lorem auctor.
 
-        Nulla pulvinar sit amet lectus quis ultricies. Nunc vitae nisl et dui pellentesque placerat. Nullam eget convallis justo, quis malesuada sapien. Sed sollicitudin magna ante, sit amet luctus ex rhoncus ac. Etiam lobortis consectetur elementum. Mauris laoreet gravida quam vitae dapibus. Nulla suscipit nisi leo, sed tristique arcu tempus sodales. Ut varius ultrices magna quis scelerisque. Cras porta convallis ipsum aliquet pulvinar. Maecenas iaculis enim et venenatis dignissim. Cras bibendum venenatis orci, quis scelerisque sapien semper eget. Cras fringilla lacus nisi, nec tincidunt orci pretium eu. Mauris laoreet sem nisl, finibus pharetra nisl faucibus a.
+        <form id="enemybuy">
+            <legend>Did the enemy team buy?</legend>
+            <input type="radio" name="whatDidTheyBuy" value="full" checked/>Full Buy
+            <input type="radio" name="whatDidTheyBuy" value="half"/>Half Buy
+            <input type="radio" name="whatDidTheyBuy" value="force"/>Force Buy
+            <input type="radio" name="whatDidTheyBuy" value="eco"/>ECO
+        </form>
+        <br/>
+        <form id="saveGuns">
+            <legend>How many of them saved guns?</legend>
+            <input type="radio" name="howManySaved" value="0" checked/>None
+            <input type="radio" name="howManySaved" value="1" />One
+            <input type="radio" name="howManySaved" value="2"/>Two
+            <input type="radio" name="howManySaved" value="3"/>Three
+            <input type="radio" name="howManySaved" value="4"/>Four
+            <input type="radio" name="howManySaved" value="5"/>Five
 
-        Etiam quis est ac ex laoreet malesuada at id augue. Quisque justo arcu, iaculis at augue id, efficitur scelerisque quam. Donec ut feugiat turpis. Suspendisse convallis sodales nisi nec cursus. Ut id dolor consectetur, facilisis purus non, tempus urna. Integer tristique tristique tincidunt. Maecenas quam magna, lobortis nec ante vel, porttitor rhoncus odio. Quisque molestie massa a ipsum vehicula ornare. Nunc facilisis lectus metus, nec finibus magna vestibulum a.
+        </form>
+        <br/>
+            <form id="kills">
+            <legend>How many of them got kills?</legend>
+            <input type="radio" name="howManyKills" value="0" checked/>None
+            <input type="radio" name="howManyKills" value="1" />One
+            <input type="radio" name="howManyKills" value="2"/>Two
+            <input type="radio" name="howManyKills" value="3"/>Three
+            <input type="radio" name="howManyKills" value="4"/>Four
+            <input type="radio" name="howManyKills" value="5"/>Five
 
-        Nunc ligula odio, eleifend ac felis ac, hendrerit semper ante. Aenean ligula augue, luctus ut quam sed, viverra volutpat velit. Aliquam sit amet erat non odio ornare porta. Etiam non consectetur turpis. Vivamus bibendum molestie finibus. Nam ac molestie dolor. Morbi accumsan lacus at elit pulvinar, vel consectetur leo lobortis. Donec non risus porta, luctus mi id, blandit risus.
+        </form>
+        <br/>
 
-        Nunc sagittis scelerisque imperdiet. Morbi ac velit magna. Etiam semper, neque sed hendrerit bibendum, ante lectus ullamcorper nunc, ut efficitur libero lorem id purus. Proin ac lacus felis. Nullam eget varius ante. Vivamus non elit et elit scelerisque mollis. Maecenas luctus rhoncus ex fermentum faucibus. Nam dictum a est et tincidunt. Etiam fermentum justo ut arcu pellentesque, id lacinia massa ultrices. Donec accumsan ullamcorper neque ac placerat. Morbi ac bibendum lorem, at lacinia tellus. Vestibulum orci augue, rhoncus in consectetur non, tincidunt ac orci. Morbi eros libero, tempus a dapibus eu, placerat vel eros. Aenean fermentum euismod condimentum. Morbi magna metus, cursus at lectus efficitur, eleifend varius dolor. Morbi dapibus arcu ac maximus tristique.
-    </p>
-</div>
+        <button name="etWin" id="nextWin">Enemy Team Win</button>
+        <button name="etLose" id="nextLose">Enemy Team Lose</button>
+        <br/>
+        <div id="prediction">
+            <h2>Prediction: </h2>
+            <p></p>
+        </div>
+    </div>
+    
 </body>
 </html>

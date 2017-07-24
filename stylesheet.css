@@ -1,36 +1,14 @@
-
-
-
-#container{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+body {
+    background-color: aquamarine;
 }
 
-#centertitle {
-    text-align: center;
-    font-size: 5rem;
+* {
+    font-family: monospace;
 }
 
-#main {
-    width: 60%;
+#container {
     margin: auto;
-    margin-top: 50%;
-
-}
-
-#nav {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
-#nav p {
-    display: inline;
-    padding: 20px;
-    font-size: 1.5rem;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
 }
