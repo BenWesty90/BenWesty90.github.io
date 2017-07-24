@@ -8,50 +8,54 @@
     
     
 <body>
-    <div id="container">
-        <h2>Round Number</h2>
-        <p id="roundnumber">none</p>
-        <h2>Total Enemy Money (Including Equipment Value)</h2>
-        <p id="enemyMoney">$800</p>
+    <div class="parent"> 
+        <div id="container">
+            <div id="vertical-align">
+                <h2>Round Number</h2>
+                <p id="roundnumber">none</p>
+                <h2>Total Enemy Money (Including Equipment Value)</h2>
+                <p id="enemyMoney">$800</p>
 
 
-        <form id="enemybuy">
-            <legend>Did the enemy team buy?</legend>
-            <input type="radio" name="whatDidTheyBuy" value="full" checked/>Full Buy
-            <input type="radio" name="whatDidTheyBuy" value="half"/>Half Buy
-            <input type="radio" name="whatDidTheyBuy" value="force"/>Force Buy
-            <input type="radio" name="whatDidTheyBuy" value="eco"/>ECO
-        </form>
-        <br/>
-        <form id="saveGuns">
-            <legend>How many of them saved guns?</legend>
-            <input type="radio" name="howManySaved" value="0" checked/>None
-            <input type="radio" name="howManySaved" value="1" />One
-            <input type="radio" name="howManySaved" value="2"/>Two
-            <input type="radio" name="howManySaved" value="3"/>Three
-            <input type="radio" name="howManySaved" value="4"/>Four
-            <input type="radio" name="howManySaved" value="5"/>Five
+                <form id="enemybuy">
+                    <legend>Did the enemy team buy?</legend>
+                    <input type="radio" name="whatDidTheyBuy" value="full" checked/>Full Buy
+                    <input type="radio" name="whatDidTheyBuy" value="half"/>Half Buy
+                    <input type="radio" name="whatDidTheyBuy" value="force"/>Force Buy
+                    <input type="radio" name="whatDidTheyBuy" value="eco"/>ECO
+                </form>
+                <br/>
+                <form id="saveGuns">
+                    <legend>How many of them saved guns?</legend>
+                    <input type="radio" name="howManySaved" value="0" checked/>None
+                    <input type="radio" name="howManySaved" value="1" />One
+                    <input type="radio" name="howManySaved" value="2"/>Two
+                    <input type="radio" name="howManySaved" value="3"/>Three
+                    <input type="radio" name="howManySaved" value="4"/>Four
+                    <input type="radio" name="howManySaved" value="5"/>Five
 
-        </form>
-        <br/>
-            <form id="kills">
-            <legend>How many of them got kills?</legend>
-            <input type="radio" name="howManyKills" value="0" checked/>None
-            <input type="radio" name="howManyKills" value="1" />One
-            <input type="radio" name="howManyKills" value="2"/>Two
-            <input type="radio" name="howManyKills" value="3"/>Three
-            <input type="radio" name="howManyKills" value="4"/>Four
-            <input type="radio" name="howManyKills" value="5"/>Five
+                </form>
+                <br/>
+                    <form id="kills">
+                    <legend>How many of them got kills?</legend>
+                    <input type="radio" name="howManyKills" value="0" checked/>None
+                    <input type="radio" name="howManyKills" value="1" />One
+                    <input type="radio" name="howManyKills" value="2"/>Two
+                    <input type="radio" name="howManyKills" value="3"/>Three
+                    <input type="radio" name="howManyKills" value="4"/>Four
+                    <input type="radio" name="howManyKills" value="5"/>Five
 
-        </form>
-        <br/>
+                </form>
+                <br/>
 
-        <button name="etWin" id="nextWin">Enemy Team Win</button>
-        <button name="etLose" id="nextLose">Enemy Team Lose</button>
-        <br/>
-        <div id="prediction">
-            <h2>Prediction: </h2>
-            <p></p>
+                <button name="etWin" id="nextWin">Enemy Team Win</button>
+                <button name="etLose" id="nextLose">Enemy Team Lose</button>
+                <br/>
+                <div id="prediction">
+                    <h2>Prediction: </h2>
+                    <p></p>
+                </div>
+            </div>
         </div>
     </div>
     

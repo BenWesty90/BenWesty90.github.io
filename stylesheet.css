@@ -1,5 +1,13 @@
 body {
-    background-color: aquamarine;
+    background-color: gainsboro;
+    
+}
+.parent {
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 * {
@@ -8,7 +16,19 @@ body {
 
 #container {
     margin: auto;
-    width: 50%;
-    border: 3px solid green;
+    height: 800px;
     padding: 10px;
+
 }
+
+#vertical-align {
+    background-color: azure;
+    position: relative;
+    border: 3px solid grey;
+    padding: 10px;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    box-shadow: 4px 4px;
+}
+
