@@ -54,7 +54,7 @@ body {
     width: 600PX;
     transform: translateY(-50%);
     box-shadow: 4px 4px;
-    height: 480px;
+    height: 420px;
 }
 
 #rncont {
@@ -96,6 +96,6 @@ body {
     position: relative;
     border: 3px solid grey;
     padding: 10px;
-    top: 21%;
+    top: 24%;
     box-shadow: 4px 4px;
 }
